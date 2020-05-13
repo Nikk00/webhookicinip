@@ -2,7 +2,11 @@
     $method = $_SERVER['REQUEST_METHOD'];
 
     if($method == "POST"){
-        $respuesta = "hola mundo";
+        $texto = "hola mundo";
+        $respuesta = new \stdClass();
+        $respuesta->speech = "";
+        $respuesta->displayText = "";
+        $respuesta->source = "webhook";
         echo json_encode($respuesta);
     }
     else{
