@@ -28,6 +28,7 @@ if($method == 'POST'){
 	}
 
 	$speech = "wena pa que po";
+	$response = new \stdClass();
 	$response->fulfillmentText = $speech;
 	echo json_encode($response);
 }
